@@ -27,8 +27,8 @@
 
 // showcase.qml
 
-import QtQuick 2.5
-import QtGraphicalEffects 1.0
+import QtQuick
+//import QtGraphicalEffects 1.0
 
 Image {
     id: root
@@ -53,15 +53,15 @@ Image {
                 duration: 250
             }
         }
-        layer.effect: FastBlur {
-            id: blur
-            radius: root.blurRadius
-            Behavior on radius {
-                NumberAnimation {
-                    duration: 250
-                }
-            }
-        }
+//        layer.effect: FastBlur {
+//            id: blur
+//            radius: root.blurRadius
+//            Behavior on radius {
+//                NumberAnimation {
+//                    duration: 250
+//                }
+//            }
+//        }
         layer.enabled: true
     }
 
